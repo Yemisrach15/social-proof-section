@@ -15,8 +15,6 @@ body::before{
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    z-index: -1;
 }
 body::after{
     content: "";
@@ -70,9 +68,13 @@ body::before, body::after{
     background-color: hsl(300, 24%, 96%);
     padding: 1em 3em;
 }
-.review img{
+.star-icon{
+    background: url(../images/icon-star.svg) no-repeat;
+    display: inline-block;
+    height: 16px;
     margin: 0 .15em;
     margin-bottom: .9em;
+    width: 17px;
 }
 .review p{
     color: hsl(300, 43%, 22%);
@@ -141,7 +143,7 @@ body::before, body::after{
         margin: 1.1em 0 0 0;
         width: 71.5%;
     }
-    .review img{
+    .star-icon{
         margin-bottom: 0;
     }
     .stars{
@@ -166,7 +168,7 @@ body::before, body::after{
     }   
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1075px){
+@media only screen and (min-width: 768px) and (max-width: 1089px){
     .intro{
         margin-bottom: 2.8em;
     }
@@ -177,7 +179,7 @@ body::before, body::after{
         display: block;
         text-align: center;
     }
-    .review img{
+    .star-icon{
         margin-bottom: .4em;
     }
     .card:nth-child(2), .card:nth-child(3){
